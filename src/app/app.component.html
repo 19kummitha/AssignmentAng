@@ -1,0 +1,46 @@
+<!-- <button (click)="getAll()">{{get?'hide':'get'}}</button>
+
+<br>
+<br>
+<div class="card" style="width: 18rem;">
+  
+  <div *ngIf="get">
+    <div class="card-body" *ngFor="let product of products">
+      <h5 class="card-title">{{ product.Name }}</h5>
+      <h4 class="card-text">{{ product.Price }}</h4>
+      <button class="btn btn-danger" (click)="deleteProduct(product.Id)">Delete</button>
+    </div>
+  </div>
+  <h2>Add Product</h2>
+  <label for="">Name</label>
+    <input #productName type="text">
+    <label for="">Price</label>
+    <input #productPrice type="number">
+    <button (click)="addProduct(productName.value, productPrice.value,productName,productPrice)">Add Product</button>
+</div> -->
+<!-- <div class="container">
+  <h1>Root Component</h1>
+  <router-outlet></router-outlet>
+</div> -->
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../homes">homes</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" routerLink="../abouts">abouts</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" routerLink="../contactus">contactus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link Login"  routerLink="../login">Login</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Routing</h5>
+  </div>
+  <router-outlet></router-outlet>
+</div>
